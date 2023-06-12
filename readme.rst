@@ -1,71 +1,36 @@
 ###################
-What is CodeIgniter
+Authentication dan OAuth2 di Codeigniter 3
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Program sederhana login menggunakan authentication user-password dan OAuth2 Google, menggunakan framework codeigniter 3.
+Program ini menyediakan dua fitur login, fitur pertama menggunakan username dan password, fitur kedua menggunakan otentikasi akun google.
 
-*******************
-Release Information
-*******************
+1. Login username password
+Username-password akan diperiksa ke database local, jika sudah terdaftar maka dizinkan masuk, jika tidak terdaftar makan akan menampilkan pesan gagal.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+2. Login OAuth2 Google
+Akan melakukan pengecekkan akun google melalui API Google, jika akun google telah terdaftar maka tahap berikutnya pemeriksaan email di database local, jika email sudah terdaftar maka diizinkan masuk, jika tidak terdaftar maka akan menampilkan pesan gagal.
 
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
 *********
-Resources
+Fitur
+*********
+- Login menggunakan username dan password
+- Pemeriksaan username dan password di database local
+- Login menggunakan OAuth2 Google
+- Otentikasi akun google kemudian melakukan pemeriksaan email di database local
+- Respon login berhasil dan gagal
+- Session login
+
+*********
+Tools
 *********
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+-  `Codeigniter 3 <https://codeigniter.com/>`_
+-  `OAuth2 <https://developers.google.com/identity/protocols/oauth2?hl=id>`_
+-  `Google apiclient <https://github.com/googleapis/google-api-php-client>`_
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+************
+Dokumentasi
+************
+Demo aplikasi : 
