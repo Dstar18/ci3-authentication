@@ -9,7 +9,7 @@ class Dashboard extends CI_Controller{
     }
 
     public function index(){
-        $result['user'] = $this->session->userdata('isloggedin');
+        $result['user'] = $this->userlogin->user_login();
         $this->load->view('dashboard_view',$result);
     }
 }

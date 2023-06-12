@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <?php $this->load->view('_partials/head.php');?>
+        <title>Authentication | Log in</title>
     </head>
 
     <body class="hold-transition login-page">
@@ -51,7 +52,7 @@
                         </a>
                     </div>
                     <p class="mb-0">
-                        <a href="" class="text-center">Register a new membership</a>
+                        <a href="<?=base_url('Register')?>" class="text-center">Register a new membership</a>
                     </p>
                 </div>
             </div>

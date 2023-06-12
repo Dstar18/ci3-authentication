@@ -17,7 +17,15 @@
                             <!-- Page Content -->
                             <div class="card-body">
                                 <div class="col-12 text-center">
-                                    <h5 class="lead"><b>Id User : <?=$user?></b></h5>
+                                    <h5 class="lead"><b>Id User : <?=$user->iduser?></b></h5>
+                                    <h5 class="lead"><b>Firstname : <?=$user->firstname?></b></h5>
+                                    <h5 class="lead"><b>Lastname : <?=$user->lastname?></b></h5>
+                                    <h5 class="lead"><b>Email : <?=$user->email?></b></h5>
+                                    <h5 class="lead"><b>Role User : <?=$user->role?></b></h5>
+                                    <h5 class="lead"><b>Username : <?=$user->username?></b></h5>
+                                    <h5 class="lead"><b>Password : <?=$user->password?></b></h5>
+                                    <h5 class="lead"><b>Created at : <?=$user->created_at?></b></h5>
+                                    <h5 class="lead"><b>Session at : <?=$user->session_at?></b></h5>
                                 </div>
                             </div>
                             <!-- /Page Content -->
