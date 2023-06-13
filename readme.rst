@@ -39,11 +39,13 @@ Tools
 Instalasai
 ************
 1. clone/download project https://github.com/Dstar18/ci3-authentication.git
-2. import file database ke database local anda
-3. setting koneksi database
-4. buka browser dan masukkan url : http://localhost/ci3-authentication/ 
+2. create google apiclient
+3. input (['client_id','client_secret','redirect_uri','redirect_uri_register']) di file application > config > custom.php
+4. import file database ke database local anda
+5. setting koneksi database
+6. buka browser dan masukkan url : http://localhost/ci3-authentication/ 
 
 ************
 Dokumentasi
 ************
-Demo aplikasi : https://youtu.be/fDJGJloFP2E
+Demo aplikasi : https://youtu.be/zOo594iMfC8
